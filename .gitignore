@@ -1,0 +1,11 @@
+.DS_Store
+*.icloud
+*.swp
+*.pyc
+__pycache__
+.mypy_cache
+.coverage
+a.out
+*.obj
+*.o
+*.dSYM
