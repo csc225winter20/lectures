@@ -1,4 +1,7 @@
-0011 0000 0000 0000
-0010 0000 0000 1111
-0001 0000 0010 0001
-0011 0000 0000 1101
+; Increment the value at 0x3010.
+
+0011 0000 0000 0000  ; Start at 0x3000 -- not an actual instruction.
+0010 0000 0000 1111  ; Load what's at 0x3010 into R0.
+0001 0000 0010 0001  ; Increment R0.
+0011 0000 0000 1101  ; Store what's in R0 at 0x3010
+1111 0000 0010 0101  ; Halt the instruction cycle.
