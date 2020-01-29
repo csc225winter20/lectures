@@ -1,0 +1,9 @@
+     .ORIG x3000     ; Start at 0x3000.
+     AND R2, R2, #0  ; Clear R2.
+     ADD R3, R1, #0  ; Copy R1 into R3.
+LOOP BRnz DONE       ; While positive...
+     ADD R2, R2, R0  ; ...add R0 to R2...
+     ADD R3, R3, #-1 ; ...decrement R3...
+     BRnzp LOOP      ; ...loop back.
+DONE HALT            ; Halt.
+     .END
