@@ -7,5 +7,5 @@
 0001 001 001 1 11111    ; ...decrement R1...
 0000 111 111111100      ; ...loop back.
 0010 001 000000000      ; Restore R1.
-0000 0000 0000 0000     ; Space to save R1.
+0000 0000 0000 0000     ; BUG: Space to save R1 -- this looks like an instruction because it is before the HALT.
 1111 0000 00100101      ; Halt.
