@@ -1,4 +1,4 @@
-; Normalize the integer at 0x3010.
+; Find the sign of the integer at 0x3010.
 
 0011 0000 0000 0000  ; Start at 0x3000
 0010 000 000001111   ; 0x3000: Load the value at 0x3010 into R0, note 0x3010 - 0x3001 = 0x0F.
