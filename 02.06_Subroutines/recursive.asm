@@ -7,6 +7,6 @@ FOO     ADD R0, R0, #-1 ; Decrement R0.
         ST  R7, SAVER7  ; ...recurse...
         JSR FOO
         LD  R7, SAVER7
-DONE    RET
+DONE    RET             ; BUG: This infinitely loops for all R0 >= 3.
 SAVER7  .FILL x3000
         .END
