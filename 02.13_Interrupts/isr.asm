@@ -4,6 +4,9 @@
 KB_ISR      ST  R0, SAVER0
             ST  R1, SAVER1
 
+; NOTE: There is no need to poll the KBSR. The only way to get to this code is
+;       for the user to type a character, thereby triggering the interrupt.
+
             LD  R0, SAVE_ADDR
             LDI R1, KBDR        ; Get typed character.
             STR R1, R0, #0      ; Save in user-space.
