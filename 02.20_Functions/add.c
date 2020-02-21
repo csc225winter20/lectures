@@ -1,7 +1,8 @@
-#include <stdio.h>
+/* Defines a function named "add", takes two ints and returns one: */
+int add(int x, int y) {
+    /* Must define all vars after a left brace: */
+    int z = x + y;
 
-int main(void) {
-    printf("1 + 2 = %d\n", add(1, 2));
-
-    return 0;
+    /* Must return an int: */
+    return z;
 }
